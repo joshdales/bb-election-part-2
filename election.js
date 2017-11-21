@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var form = document.createElement('form');
       var voteButton = document.createElement('input');
       voteButton.type = 'submit'
-      voteButton.innerHTML = 'Vote for '+candidate.name;
+      voteButton.value = 'Vote for '+candidate.name;
       form.append(voteButton);
 
       form.addEventListener('submit', function(e) {
