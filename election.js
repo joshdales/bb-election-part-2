@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
           url: 'https://bb-election-api.herokuapp.com/vote',
           method: 'POST',
           data: {'name': candidate.name}
+        }).done(function () {
+          voteButton.setAttribute('disabled', true);
         })
       })
       li.append(form);
